@@ -6,16 +6,11 @@ Steps:
 
 2. `conda activate pypa-env`
 
-3. Created `pyproject.toml` as described
-   [here](https://setuptools.pypa.io/en/latest/userguide/quickstart.html), with
-   the following extra lines:
+3. Created `pyproject.toml` as described [here](https://setuptools.pypa.io/en/latest/userguide/quickstart.html), but added in the following section to exclude one directory and include another:
 ```
 [tool.setuptools.packages.find]
 include = ["greetme"]
-exclude = ["old", "working-minimal"]
-
-[project.scripts]
-greet = "greetme.greet_me"
+exclude = ["old"]
 ```
 
 4. `python -m build` -- used to build

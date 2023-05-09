@@ -9,8 +9,5 @@ dependencies = []
 
 [tool.setuptools.packages.find]
 include = ["greetme"]
-exclude = ["working-minimal"]
-
-[project.scripts]
-greet = "greetme:_greet_me"
+exclude = ["old"]
 
